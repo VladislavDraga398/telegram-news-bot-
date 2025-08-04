@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    image: telegram-news-bot:latest
+    container_name: telegram-news-bot
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Moscow
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    command: /app/telegram-bot

@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Binaries
+/bot
+/telegram-bot
+
+# IDE specific files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Temporary files
+*.log
+*.tmp
+
+# Database files (будут монтироваться как volume)
+/data/*.db
+
+# GitHub Actions
+.github/
+
+# Tests
+tests/
+
+# Misc
+README.md
+LICENSE
+*.md
